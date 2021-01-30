@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const path = require('path');
 
 const routes = require('./src/routes');
-const port = 3500;
+const port = process.env.PORT || 3000;
 
 app.use(morgan('dev'));
 app.use(express.json());
