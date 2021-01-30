@@ -31,7 +31,7 @@ const operators = {
     'gt': function(fieldTypeValue, conditionValue){ return fieldTypeValue > conditionValue},
     'gte': function(fieldTypeValue, conditionValue){ return fieldTypeValue >= conditionValue},
     'contains': function(fieldTypeValue, conditionValue){ 
-      return (conditionValue.includes(fieldTypeValue))
+      return (fieldTypeValue.includes(conditionValue))
     }
 }
 
